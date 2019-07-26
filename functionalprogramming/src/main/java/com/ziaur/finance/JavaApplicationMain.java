@@ -1,13 +1,15 @@
+package com.ziaur.finance;
+
 import java.util.logging.Logger;
 
 public class JavaApplicationMain {
 
-    static final Logger logger = Logger.getLogger("JavaApplicationMain");
+    static final Logger logger = Logger.getLogger("com.ziaur.finance.JavaApplicationMain");
 
     public static void main(String[] args) {
         final Double costs = TimingLog.timed("Cost Calculation", JavaApplicationMain::calculateCosts);
         final Double revenue = TimingLog.timed("Revenue Calculation", JavaApplicationMain::calculateRevenue);
-        //final Double profit = TimingLog.timed("Cost Calculation", () -> calculateProfit(costs, revenue));
+        //final Double profit = com.ziaur.finance.TimingLog.timed("Cost Calculation", () -> calculateProfit(costs, revenue));
         final Double profit = TimingLog.timed("Profit Calculation"
                 , logger::info
                 , () -> calculateProfit(costs, revenue));

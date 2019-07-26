@@ -1,3 +1,5 @@
+package com.ziaur.finance;
+
 import java.util.Date;
 import java.util.function.Consumer;
 import java.util.function.Supplier;
@@ -5,7 +7,7 @@ import java.util.logging.Logger;
 
 public class TimingLog {
 
-    Logger logger = Logger.getLogger("TimingLog");
+    Logger logger = Logger.getLogger("com.ziaur.finance.TimingLog");
 
     public static <T> T timed(String desc,
                               Supplier<T> code){

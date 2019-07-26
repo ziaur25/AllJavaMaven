@@ -13,16 +13,25 @@ Pipeline in streams
 
 
 ######Terminal operations 
--> trigger processing, return a value, terminate the stream instance;
+- trigger processing
+- return a value
+- terminate the stream instance;
 
 
 ######Intermediate operations 
--> 
+- trigger no processing
+- return a Stream
+- let you keep going
 
 ######Distinct
-->
+- distinct items
 
 ######Collectors
+- collect from stream to new type
+- requires operator
+- everything available internally
+- Collectors util
+
 
 
 

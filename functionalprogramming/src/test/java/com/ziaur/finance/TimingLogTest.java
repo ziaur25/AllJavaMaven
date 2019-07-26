@@ -1,9 +1,9 @@
+package com.ziaur.finance;
 
+import com.ziaur.finance.TimingLog;
 import org.junit.Test;
 
 import java.util.concurrent.atomic.AtomicReference;
-
-import static org.junit.Assert.*;
 
 public class TimingLogTest {
 
