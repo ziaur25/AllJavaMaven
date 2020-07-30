@@ -11,7 +11,6 @@ import static java.util.Optional.ofNullable;
 public class OptionalNullHandler {
 
 
-
     private static final List<Pair<String, String>> URL_TO_ENVIRONMENT = buildList();
 
     private static List<Pair<String, String>> buildList() {
@@ -53,5 +52,27 @@ public class OptionalNullHandler {
         Optional<String> aNew = getNew("bbb.mysite.com");
         System.out.println(aNew);
 
+
+        //checking null for a single object
+        System.out.println("checking null for a single object");
+        String aaa = result(1);
+
+        String string = ofNullable(aaa).orElse("no value");
+        System.out.println(string);
+        aaa = result(0);
+
+        String str2 = ofNullable(aaa).orElse("no value");
+        System.out.println(str2);
+
+    }
+
+    private static <A> A result(int toggle) {
+        A a;
+        if (toggle == 1) {
+            a = (A) new String("has value");
+        } else {
+            a = null;
+        }
+        return a;
     }
 }
