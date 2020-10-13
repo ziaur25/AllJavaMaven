@@ -2,7 +2,7 @@
 All java related projects under this repo - to explore java concepts, etc
 
 
-####Functional Programming
+#### Functional Programming
 
 
 Functional Interfaces - Data In - Data out
@@ -12,21 +12,21 @@ External iterations - Internal iterations
 Pipeline in streams
 
 
-######Terminal operations 
+###### Terminal operations 
 - trigger processing
 - return a value
 - terminate the stream instance;
 
 
-######Intermediate operations 
+###### Intermediate operations 
 - trigger no processing
 - return a Stream
 - let you keep going
 
-######Distinct
+###### Distinct
 - distinct items
 
-######Collectors
+###### Collectors
 - collect from stream to new type
 - requires operator
 - everything available internally
